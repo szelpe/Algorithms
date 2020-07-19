@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RomanNumbers", "RomanNumbers\RomanNumbers.csproj", "{01495633-2180-4F02-9FF6-13E6174FD19E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Benchmark", "Benchmark\Benchmark.csproj", "{8B33EDA7-C658-4357-8F3D-BA0B8CC14FEB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{01495633-2180-4F02-9FF6-13E6174FD19E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01495633-2180-4F02-9FF6-13E6174FD19E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01495633-2180-4F02-9FF6-13E6174FD19E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01495633-2180-4F02-9FF6-13E6174FD19E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B33EDA7-C658-4357-8F3D-BA0B8CC14FEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B33EDA7-C658-4357-8F3D-BA0B8CC14FEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B33EDA7-C658-4357-8F3D-BA0B8CC14FEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B33EDA7-C658-4357-8F3D-BA0B8CC14FEB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E5F58D6E-17B3-4D4C-8695-C62C75B9F8C7}
+	EndGlobalSection
+EndGlobal
