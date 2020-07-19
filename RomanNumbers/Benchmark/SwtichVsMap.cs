@@ -29,6 +29,8 @@ namespace Benchmark
         };
         RomanToIntSwitch romanNumbersSwitch = new RomanToIntSwitch();
         RomanToIntMap romanNumbersMap = new RomanToIntMap();
+        RomanToIntDictionary romanNumbersDictionary = new RomanToIntDictionary();
+
         List<string> romans = new List<string>();
 
         [Params(1000)]
@@ -55,7 +57,7 @@ namespace Benchmark
         }
 
         [Benchmark]
-        public void Swtich()
+        public void Switch()
         {
             foreach (var roman in romans)
             {
@@ -69,6 +71,15 @@ namespace Benchmark
             foreach (var roman in romans)
             {
                 int result = romanNumbersMap.RomanToInt(roman);
+            }
+        }
+
+        [Benchmark]
+        public void Dictionary()
+        {
+            foreach (var roman in romans)
+            {
+                int result = romanNumbersDictionary.RomanToInt(roman);
             }
         }
     }

@@ -45,5 +45,23 @@ namespace RomanNumbers
 
             Assert.Equal(expected, result);
         }
+
+        [Theory]
+        [InlineData("I", 1)]
+        [InlineData("II", 2)]
+        [InlineData("V", 5)]
+        [InlineData("X", 10)]
+        [InlineData("XI", 11)]
+        [InlineData("IX", 9)]
+        [InlineData("LVIII", 58)]
+        [InlineData("MCMXCIV", 1994)]
+        public void SimpleTestDictionary(string roman, int expected)
+        {
+            var romanNumbers = new RomanToIntDictionary();
+
+            int result = romanNumbers.RomanToInt(roman);
+
+            Assert.Equal(expected, result);
+        }
     }
 }

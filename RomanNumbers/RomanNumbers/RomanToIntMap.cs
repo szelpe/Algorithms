@@ -55,7 +55,7 @@ namespace RomanNumbers
 
         private const int modus = 17;
 
-        private int[] buckets = new int[modus];
+        private readonly int[] buckets = new int[modus];
 
         public RomanMap()
         {
