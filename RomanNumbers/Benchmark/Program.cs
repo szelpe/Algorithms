@@ -21,7 +21,28 @@ namespace Benchmark
 
             //   digits.ForEach(d => Console.WriteLine($"{d} => {d.Item1 & 63}"));
 
-            BenchmarkRunner.Run<SwtichVsMap>();
+            sbyte[] brackets = new sbyte[125];
+
+            brackets['('] = (sbyte)')';
+            brackets['{'] = (sbyte)'}';
+            brackets['['] = (sbyte)']';
+
+            brackets[')'] = -1;
+            brackets['}'] = -1;
+            brackets[']'] = -1;
+
+            List<(char, int)> digits = new List<(char, int)>() {
+                ( '{', 1000 ),
+                ( '[', 500 ),
+                ( '(', 100 ),
+                ( '}', 50 ),
+                ( ']', 10 ),
+                ( ')', 5 ),
+            };
+
+            digits.ForEach(d => Console.WriteLine($"{d.Item1} => {(byte)d.Item1} => {d.Item1 % 7}"));
+
+            // BenchmarkRunner.Run<SwtichVsMap>();
         }
     }
 }
